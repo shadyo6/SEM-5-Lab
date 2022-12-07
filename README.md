@@ -1,14 +1,42 @@
-# SEM-5-Lab
+# Unix System Programming lab Termworks
 
-## SEM 5 has 2 labs
+You can copy your file and press on EDIT and then paste
 
-1. Unix lab
-1. SD lab
+learn vi editor commands to read/write the lab termworks in this cheatsheet
+https://atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
 
-# Printers
+common vi commands:
+to create a vi file use:
+	$ vi filename.c
+1. important: to jump on to different modes, use Esc key
+	by default vi editor will be in command mode
+to bring it to write mode
+	press 'i'
+to save the file, press Esc then type
+	:wq
+or	ZZ
+to exit the editor without saving the file, press Esc then type
+	:q!
+to undo, press Esc then press
+	'u' to  undo last change
+	'U' to undo all changes on line
 
-| IPv4 | IPv6 | Name |
-|:--- | :--- | :--- |
-| 10.12.2.250 | FE80:0:0:0:7AE3:B5FF:FEF6:46EF | HP LaserJet P2035n
-| 10.12.2.6 | FE80::82CE:62FF:FE5C:4EBE | HP LaserJet M403n (5C4EBE)
-| 10.12.2.6 | FE80::82CE:62FF:FE5C:4EB | HP LaserJet M403n   NPI5C4EBE
+or 
+
+mkdir dir_name
+cd dir_name
+touch filename.c
+//edit using gedit
+gedit <filename>
+
+
+
+
+
+
+
+
+
+
+
+
