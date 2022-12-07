@@ -1,33 +1,23 @@
-# Unix System Programming lab Termworks
+# Unix System Programming ftp guide
 
-You can copy your file and press on EDIT and then paste
+### Note: Replace the "\*" in tw*.cpp to download the desired file
 
-learn vi editor commands to read/write the lab termworks in this cheatsheet
-https://atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
+### local download from inside the network
 
-common vi commands:
-to create a vi file use:
-	$ vi filename.c
-1. important: to jump on to different modes, use Esc key
-	by default vi editor will be in command mode
-to bring it to write mode
-	press 'i'
-to save the file, press Esc then type
-	:wq
-or	ZZ
-to exit the editor without saving the file, press Esc then type
-	:q!
-to undo, press Esc then press
-	'u' to  undo last change
-	'U' to undo all changes on line
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@10.10.1.12//Software/Fedora/USP/tw*.c
 
-or 
+### Global download from outside the network
 
-mkdir dir_name
-cd dir_name
-touch filename.c
-//edit using gedit
-gedit <filename>
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@210.212.207.12//Software/Fedora/USP/tw*.c
+
+## Example: To download tw3.c locally
+
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@10.10.1.12//Software/Fedora/USP/tw3.c
+
+## Example: To download tw3.c globally
+
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@210.212.207.12//Software/Fedora/USP/tw3.c
+
 
 
 
