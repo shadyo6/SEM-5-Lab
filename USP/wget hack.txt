@@ -1,0 +1,8 @@
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@10.10.1.12//Software/Fedora/USP/tw*.cpp
+
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@10.10.1.12//Software/Fedora/USP/tw*.c
+
+
+
+note:
+tw1 and tw2 are .cpp files and rest other termworks are .c files.

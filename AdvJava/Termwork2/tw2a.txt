@@ -1,0 +1,57 @@
+import java.util.*;
+public class TW2{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        ArrayList<Integer> Aint = new ArrayList<Integer>();
+        ArrayList<Float> Afloat= new ArrayList<Float>();
+        while(true){
+            System.out.println("1. Add Elements(Integers)\n2. Add Elements(Float)\n3. Search an Element(Integer)\n4. Search An Element(Float)\n5. Exit");
+            System.out.println("Enter your Options: ");
+            int choice = s.nextInt();
+            switch(choice){
+                case 1: System.out.println("Enter your number of elements: ");
+                        int n1 = s.nextInt();
+                        System.out.println("Enter the Elements: ");
+                        for (int i = 0; i < n1; i++){
+                            int ele = s.nextInt();
+                            Aint.add(ele);
+                        }
+                        break;
+                case 2: System.out.println("Enter your number of elements: ");
+                        int n2 = s.nextInt();
+                        System.out.println("Enter the Elements: ");
+                        for (int i = 0; i < n2; i++){
+                            float ele = s.nextFloat();
+                            Afloat.add(ele);
+                        }
+                        break;
+                case 3: System.out.println("Enter the element to search: ");
+                        int searcheleI = s.nextInt();
+                        if(!Aint.isEmpty()){
+                            if(Aint.contains(searcheleI))
+                                System.out.println("element " + searcheleI + " Found\n");
+                            else
+                                System.out.println("element " + searcheleI + " Not Found");
+                        }
+                        else
+                            System.out.println("List empty\n");
+                        break;
+                case 4: System.out.println("Enter the element to search: ");
+                        float searcheleF = s.nextFloat();
+                        if(!Afloat.isEmpty()){
+                            if(Afloat.contains(searcheleF))
+                                System.out.println("element " + searcheleF + " Found\n");
+                            else
+                                System.out.println("element " + searcheleF + " Not Found");
+                        }
+                        else
+                            System.out.println("List empty\n");
+                        break;
+                case 5: System.exit(0);
+                default:
+                        System.out.println("Invalid Argument\n");
+                        break;
+            }
+        }
+    }
+}
