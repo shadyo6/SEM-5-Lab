@@ -1,0 +1,10 @@
+John Doe,9.0
+Jane Smith,8.7
+Bob Johnson,8.3
+Alice Brown,7.9
+Krishna Ronaldo,8.9
+Kylian MBappu,8.7
+Father Clyde,8.51
+Mary,8.49
+Harsh,8.3
+Pandit,7.0

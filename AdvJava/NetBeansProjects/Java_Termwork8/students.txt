@@ -1,0 +1,4 @@
+John Doe,9.0
+Jane Smith,8.7
+Bob Johnson,8.3
+Alice Brown,7.9
