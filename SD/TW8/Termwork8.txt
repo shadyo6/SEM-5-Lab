@@ -1,0 +1,67 @@
+function binarySearch(x) {
+  var arr = [10,20,35,45,55,60,70,80,90,95];
+  
+  let low = 0;
+  let high = arr.length - 1;
+
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2);
+    if (arr[mid] === x) {
+      return mid;
+    } else if (arr[mid] < x) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    } 
+  }
+  return -1;
+}
+
+possible test cases:
+Test Suite: Search for existing element
+Function Call: binarySearch(20)
+Expected Output: 1
+Actual Output: 1
+Result: PASS
+
+Test Suite: Search for non-existing element
+Function Call: binarySearch(77)
+Expected Output: -1
+Actual Output: -1
+Result: PASS
+
+Test Suite: Search for smallest element in the array
+Function Call: binarySearch(10)
+Expected Output: 0
+Actual Output: 0
+Result: PASS
+
+Test Suite: Search for largest element in the array
+Function Call: binarySearch(95)
+Expected Output: 9
+Actual Output: 10
+Result: FAIL
+
+Test Suite: Search for element just less than the smallest element in the array
+Function Call: binarySearch(1)
+Expected Output: -1
+Actual Output: -1
+Result: PASS
+
+Test Suite: Search for element just greater than the largest element in the array
+Function Call: binarySearch(100)
+Expected Output: -1
+Actual Output: -1
+Result: PASS
+
+Test Suite: Search for element in the middle of the array
+Function Call: binarySearch(55)
+Expected Output: 4
+Actual Output: 4
+Result: PASS
+
+Test Suite: Search for element not in the middle of the array
+Function Call: binarySearch(80)
+Expected Output: 7
+Actual Output: 6
+Result: FAIL
