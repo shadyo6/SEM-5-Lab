@@ -1,7 +1,11 @@
 # To download a specific termwork example Termwork 3
 
-`wget -r -nH --cut-dirs=5 -nc ftp://software:software@210.212.207.12//Software/Fedora11/USP/tw3.c`
+```
+wget -r -nH --cut-dirs=5 -nc ftp://software:software@210.212.207.12//Software/Fedora11/USP/tw3.c
+```
 
 # To clear history
 
-`history -c`
+```
+history -c
+```
